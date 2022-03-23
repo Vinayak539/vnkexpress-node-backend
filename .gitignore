@@ -51,8 +51,8 @@
 39 
  
 40 # Dependency directories 
-41 node_modules/ 
-42 jspm_packages/ 
+41 node_modules
+42 jspm_packages
 43 
  
 44 # Snowpack dependency directory (https://snowpack.dev/) 
