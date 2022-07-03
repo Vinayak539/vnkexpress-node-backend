@@ -9,8 +9,14 @@ const journeySchema = new mongoose.Schema({
       type: Date,
       required: true
     },
-    // b_id,
-    // r_id,
+    b_id: {
+      type: Number,
+      required: true
+    },
+    r_id: {
+      type: Number,
+      required: true
+    },
     seats_info: {
       type: [{
         seat_num: Number,

@@ -5,15 +5,6 @@ const availableRoutes = require('../controllers/availableRoutesController');
 
 
 router.get('/', availableRoutes.getAvailableRoutes);
-
-
-router.post('/', (req, res)=>{
-    var myobj = [     
-      { 'r_id': 12, 'destination': "Mumbai", 'source': "Ghaziabad"},  
-      { 'r_id': 13, 'destination': "Mumbai", 'source': "CA"},  
-      { 'r_id': 14, 'destination': "Mumbai", 'source': "Islamabad"},  
-      { 'r_id': 15, 'destination': "Mumbai", 'source': "London"}  
-    ];  
-})
+router.post('/', availableRoutes.addAvailableRoutes);
 
 module.exports = router;

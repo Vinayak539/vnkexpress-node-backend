@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 // Importing the routes
 const availableRoutes = require('./routes/availableRoutes');
 const indexRoutes = require('./routes/indexRoutes');
-
+const journeyDetailsRouter = require('./routes/journeyDetailsRouter');
 const app = express();
 app.use(express.json());
 
@@ -37,6 +37,7 @@ app.use(function(req, res, next) {
 // Handling the routes
 app.use('/', indexRoutes);
 app.use('/routes', availableRoutes);
+app.use('/journey-details', journeyDetailsRouter);
 
 
 
