@@ -1,12 +1,15 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
+var cors = require('cors')
 
 // Importing the routes
 const availableRoutes = require('./routes/availableRoutes');
 const indexRoutes = require('./routes/indexRoutes');
 const journeyDetailsRouter = require('./routes/journeyDetailsRouter');
 const app = express();
+
+app.use(cors())
 app.use(express.json());
 
 
